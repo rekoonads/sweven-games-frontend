@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gaming-dark text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-gaming-purple to-gaming-cyan text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply border border-gaming-purple text-gaming-purple px-6 py-3 rounded-lg font-semibold hover:bg-gaming-purple hover:text-white transition-all duration-300;
+  }
+  
+  .card-gaming {
+    @apply bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 border border-gray-700 hover:border-gaming-purple transition-all duration-300 hover:shadow-xl hover:shadow-gaming-purple/20;
+  }
+  
+  .nav-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-200 font-medium;
+  }
+  
+  .nav-link.active {
+    @apply text-gaming-cyan;
+  }
+}
